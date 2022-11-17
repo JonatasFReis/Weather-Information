@@ -1,0 +1,22 @@
+algorithme time
+var
+duracao, horas, minutos, segundo, resto: entier
+
+début
+ecrireln
+ecrireln ("digite a duração em segundos")
+lire (duracao)
+ecrireln
+
+horas <- duracao / 3600
+
+resto <- duracao mod 3600
+
+minutos <- resto / 60
+
+segundo <- resto mod 60
+
+ecrireln
+ecrire (horas, ":", minutos, ":", segundo)
+
+  fin
